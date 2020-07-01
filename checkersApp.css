@@ -1,0 +1,209 @@
+body {
+   background-color: White;
+   font-family: 'PT Sans';
+   font-size: 16px;
+   margin: 0;
+}
+
+#header {
+   width: 100%;
+   height: 300px;
+   color: White;
+   background-color: Brown;
+   position: relative;
+   text-align: center;
+}
+
+h1 {
+   font-size: 4.5rem;
+   font-weight: 900;
+   text-decoration: underline;
+   position: absolute;
+   top: 30%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+#controls {
+   width: 50%;
+   height: 70px;
+   margin: 0 auto 0 auto;
+   color: White;
+   background-color: Brown;
+}
+
+button {
+   margin: 0;
+   border: none;
+   background-color: Brown;
+   color: White;
+   font-size: inherit;
+   font-weight: 900;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   padding: 0 30px 0 30px;
+}
+
+button:hover {
+   cursor: pointer;
+   background-color: Black;
+}
+
+#checkersScreen {
+   width: 50%;
+   margin: 0 auto 0 auto;
+}
+
+table {
+   width: 100%;
+}
+
+.odd {
+   background-color: Grey;
+   width: 12%;
+}
+
+.even {
+   background-color: DarkGrey;
+   width: 12%
+}
+
+.red {
+    background-color: Red;
+    border-radius: 50%;
+    width: 100%;
+    padding-bottom: 100%;
+    margin: auto;
+}
+
+.black {
+   background-color: Black;
+   border-radius: 50%;
+   width: 100%;
+   padding-bottom: 100%;
+   margin: auto;
+}
+
+.blackKing {
+   border: thick solid Aqua;
+}
+
+.redKing {
+   border: thick solid Aqua;
+}
+
+.selected {
+   background-color: Gold;
+}
+
+.emptyCell {
+   padding-bottom: 12%;
+}
+
+.even.emptyCell:hover {
+   background-color: Lime;
+}
+
+.blackCell:hover {
+   background-color: Lime;
+}
+
+#controlsB {
+   width: 50%;
+   height: 40px;
+   margin: 0 auto 0 auto;
+   color: White;
+   background-color: Brown;
+}
+
+.cpuSelected {
+   background-color: Navy;
+}
+
+.target {
+   background-color: Lime;
+}
+
+#hideMe {
+   background-color: Beige;
+   width: 50%;
+   margin: 0 auto 0 auto;
+   padding: 5px;
+}
+
+#closeInstructions {
+   border: thin solid White;
+   float: right;
+}
+
+#instructions {
+   width: 90%;
+   margin: 0 auto 0 auto;
+   font-size: 1.5rem;
+   font-weight: 400;
+   padding: 30px 5% 30px 5%;
+   border-top: thick solid Brown;
+}
+
+h2 {
+   text-decoration: underline;
+}
+
+#checkersScreen { 
+   visibility: hidden;
+   display: none; 
+}
+
+
+@media only screen and (max-device-width: 600px) {
+
+nav ul li {
+   padding: 0px 5px 0px 5px;
+   font weight: 500;
+   font-size: 10px;
+   margin: 0px auto 0px auto;
+}
+
+#hideMe {
+   width: 90%;
+}
+
+#instructions {
+   width: 90%;
+   margin: 0 auto 0 auto;
+   font-size: 10px;
+   font-weight: 400;
+   padding: 30px 5% 30px 5%;
+   border-top: thick solid Brown;
+}
+
+#checkersScreen {
+   width: 95%;
+   margin: 0 auto 0 auto;
+}
+
+#dropDownContainer {
+   font-size: 10px;
+}
+
+.even.emptyCell:hover {
+   background-color: DarkGrey;
+}
+
+.blackKing {
+   border: thin solid Aqua;
+}
+
+.redKing {
+   border: thin solid Aqua;
+}
+
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Checkers</title>
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet"> 
+      <link href="css/checkersApp.css" type="text/css" rel="stylesheet" />
+   </head>
+   <body>
+
+       <section class="header">
+          <div id="header">
+          	<h1 id="title">Checkers</h1>
+          </div>
+       </section>
+
+       <section class="content">
+
+          <div id="controls">
+             <center>
+                <button id="start" type="button">Start a New Game</button>
+              </center>
+          </div>
+
+          <div id="hideMe">
+            <button id="closeInstructions" type="button">X</button>
+
+                  <div id="instructions">
+                      <h2><center>Instructions</center></h2>
+                      Welcome to my game of checkers! Here are some guidelines
+                      and tips to help you understand the mechanics. Please read everything before 
+                      you start to play. 
+                      <ul>
+                         <li>At the start of a new game, it is always your turn.</li>
+                         <li>Click on a piece to select it, then click on a landing spot.</li>
+                         <li>There is no double jumping, and only a king can eat multiple pieces.</li>
+                         <li>You cannot eat backwards unless your piece is a king.</li>
+                         <li>Pieces that are kinged have an aqua-colored border around them.</li>
+                         <li>King pieces can land anywhere when they jump an enemy piece aslong as a
+                         team member is not in their path.</li>
+                         <li>If you need to select a different piece, un-select your current one by using the
+                         button at the bottom of the checker board.</li>
+                         <li>While its the CPU's turn, please do not click on anything.</li>
+                         <li>If you run into a glitch, unselect your piece or click on "Start a New Game".</li>
+                         <li>Close this instruction window to begin.</li>
+
+                         <p>Thanks for reading, I hope you enjoy!</p>
+
+                      </ul>
+                  </div>
+          </div>
+
+
+          <div id="checkersScreen">
+             <table id="checkerBoard">
+
+              <tr id="rowOne">   
+                    <td id="oneOne" class="odd"></td>   <td id="oneTwo" class="even"></td>   <td id="oneThree" class="odd"></td>
+                    <td id="oneFour" class="even"></td>    <td id="oneFive" class="odd"></td>    <td id="oneSix" class="even"></td>
+                    <td id="oneSeven" class="odd"></td>   <td id="oneEight" class="even"></td>
+              </tr>
+
+              <tr id="rowTwo">   
+                    <td id="twoOne" class="even"></td>   <td id="twoTwo" class="odd"></td>   <td id="twoThree" class="even"></td>
+                    <td id="twoFour" class="odd"></td>    <td id="twoFive" class="even"></td>    <td id="twoSix" class="odd"></td>
+                    <td id="twoSeven" class="even"></td>   <td id="twoEight" class="odd"></td>
+              </tr>
+
+              <tr id="rowThree">   
+                    <td id="threeOne" class="odd"></td>   <td id="threeTwo" class="even"></td>   <td id="threeThree" class="odd"></td>
+                    <td id="threeFour" class="even"></td>    <td id="threeFive" class="odd"></td>    <td id="threeSix" class="even"></td>
+                    <td id="threeSeven" class="odd"></td>   <td id="threeEight" class="even"></td>
+              </tr>
+
+              <tr id="rowFour">   
+                    <td id="fourOne" class="even"></td>   <td id="fourTwo" class="odd"></td>   <td id="fourThree" class="even"></td>
+                    <td id="fourFour" class="odd"></td>    <td id="fourFive" class="even"></td>    <td id="fourSix" class="odd"></td>
+                    <td id="fourSeven" class="even"></td>   <td id="fourEight" class="odd"></td>
+              </tr>
+
+              <tr id="rowFive">   
+                    <td id="fiveOne" class="odd"></td>   <td id="fiveTwo" class="even"></td>   <td id="fiveThree" class="odd"></td>
+                    <td id="fiveFour" class="even"></td>    <td id="fiveFive" class="odd"></td>    <td id="fiveSix" class="even"></td>
+                    <td id="fiveSeven" class="odd"></td>   <td id="fiveEight" class="even"></td>
+              </tr>
+
+              <tr id="rowSix">   
+                    <td id="sixOne" class="even"></td>   <td id="sixTwo" class="odd"></td>   <td id="sixThree" class="even"></td>
+                    <td id="sixFour" class="odd"></td>    <td id="sixFive" class="even"></td>    <td id="sixSix" class="odd"></td>
+                    <td id="sixSeven" class="even"></td>   <td id="sixEight" class="odd"></td>
+              </tr>
+
+              <tr id="rowSeven">   
+                    <td id="sevenOne" class="odd"></td>   <td id="sevenTwo" class="even"></td>   <td id="sevenThree" class="odd"></td>
+                    <td id="sevenFour" class="even"></td>    <td id="sevenFive" class="odd"></td>    <td id="sevenSix" class="even"></td>
+                    <td id="sevenSeven" class="odd"></td>   <td id="sevenEight" class="even"></td>
+              </tr>
+
+              <tr id="rowEight">   
+                    <td id="eightOne" class="even"></td>   <td id="eightTwo" class="odd"></td>   <td id="eightThree" class="even"></td>
+                    <td id="eightFour" class="odd"></td>    <td id="eightFive" class="even"></td>    <td id="eightSix" class="odd"></td>
+                    <td id="eightSeven" class="even"></td>   <td id="eightEight" class="odd"></td>
+              </tr>
+
+
+             </table>
+          </div>
+
+
+
+          <div id="controlsB">
+             <center>
+                <button id="deSelect" type="button">Un-Select Piece</button>
+              </center>
+          </div>
+
+
+       </section>
+
+   <script src="js/checkers.js"></script>
+   </body>
+</html>
